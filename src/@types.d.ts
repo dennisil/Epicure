@@ -1,18 +1,12 @@
-interface Dish {
-  resName: string;
-  chef: string;
-  dishName: string;
-  price: number;
-  imgUrl: string;
-  ingredients: string;
-  special?: string[];
-}
 interface Restaurant {
   resName: string;
   chef: string;
   imgUrl: string;
+  tags?: string[];
 }
-
-interface Icon {
-  
+interface Dish extends Restaurant {
+  dishName: string;
+  price: number;
+  ingredients: string;
+  special?: string[];
 }

@@ -1,6 +1,7 @@
 .chef-container {
   text-align: center;
-  padding: 10px;
+  // padding: 10px;
+  margin-bottom: 120px;
   max-width: 1040px;
   .chef-info {
     gap: 70px;
@@ -11,7 +12,7 @@
     max-width: 540px;
   }
   .chef-res-container {
-    max-width: 95%;
+    width: 100%;
     margin-top: 60px;
     .chef-res-title {
       text-align: left;

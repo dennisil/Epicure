@@ -5,7 +5,7 @@ import React from "react";
 
 export const IconBanner = () => {
   return (
-    <div style={{ maxWidth: "1440px" }} className="icon-banner full flex justify-center align-center">
+    <section style={{ maxWidth: "1440px" }} className="icon-banner full flex justify-center align-center">
       <div className="banner-container full" style={{ maxWidth: "920px" }}>
         <h1>THE MEANING OF OUR ICONS :</h1>
         <div className=" icon-container full flex justify-center align-center">
@@ -23,6 +23,6 @@ export const IconBanner = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

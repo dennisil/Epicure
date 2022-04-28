@@ -1,13 +1,12 @@
-import React from "react";
 import AppleIcon from "../assets/img/companies-logo/apple.svg";
 import GoogleIcon from "../assets/img/companies-logo/google-store.svg";
 
 export const MainFooter = () => {
   return (
-    <footer className="home-layout flex column space-around ">
-      <section className="footer-content flex space-around">
+    <footer className="footer-container flex justify-center">
+      <section className="footer-content flex ">
         <div>
-          <h1>ABOUT US :</h1>
+          <h1 className="footer-about-us">ABOUT US :</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus
             vel justo fermentum bibendum non eu ipsum. Cras porta malesuada
@@ -43,11 +42,6 @@ export const MainFooter = () => {
           />
         </div>
       </section>
-      <div className="contact-container flex justify-center align-center full">
-        <h2>Contact Us</h2>
-        <h2>Term of Use</h2>
-        <h2>Privacy Policy</h2>
-      </div>
     </footer>
   );
 };

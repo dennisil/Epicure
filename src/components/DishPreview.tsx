@@ -1,7 +1,5 @@
-import React from "react";
-
 export const DishPreview = (props: {
-  item: Restaurant | Dish;
+  data: Restaurant | Dish;
   isMinimal?: boolean;
 }) => {
   // Checks if prop is a dish
@@ -10,31 +8,37 @@ export const DishPreview = (props: {
   };
 
   return (
-    <article className={props.isMinimal ?"card-container min-container": "card-container"}>
-      {isDish(props.item) && (
-        <h1 className="res-title">{props.item.resName}</h1>
+    <article
+      className={
+        props.isMinimal ? "card-container min-container" : "card-container"
+      }
+    >
+      {isDish(props.data) && (
+        <h1 className="res-title">{props.data.resName}</h1>
       )}
-      <div className={props.isMinimal ? "item-card min-item-card" : "item-card"}>
+      <div
+        className={props.isMinimal ? "item-card min-item-card" : "item-card"}
+      >
         <img
           className={
-            isDish(props.item)
+            isDish(props.data)
               ? "dish-img"
               : props.isMinimal
               ? "min-img"
               : "res-img"
           }
-          src={props.item.imgUrl}
+          src={props.data.imgUrl}
           alt="Dish "
         />
         {/* Dish Card */}
-        {isDish(props.item) ? (
+        {isDish(props.data) ? (
           <div className="card-info dish flex align-center space-between">
-            <h1 className="card-secondary-title">{props.item.dishName}</h1>
-            <p>{props.item.ingredients}</p>
+            <h1 className="card-secondary-title">{props.data.dishName}</h1>
+            <p>{props.data.ingredients}</p>
             <div className="card-icon-container flex column align-center">
               <div className="card-icons-container">
-                {props.item.special
-                  ? props.item.special.map((special) => (
+                {props.data.special
+                  ? props.data.special.map((special) => (
                       <img
                         className="special-icon"
                         src={`/imgs/special-icon/${special}-icon.svg`}
@@ -43,7 +47,11 @@ export const DishPreview = (props: {
                     ))
                   : ""}
               </div>
-              <span className="card-price">₪{props.item.price}</span>
+              <div className="price-line-container flex align-center">
+                <div className="line-1"></div>
+                <span className="card-price">₪{props.data.price}</span>
+                <div className="line-2"></div>
+              </div>
             </div>
           </div>
         ) : (
@@ -54,9 +62,9 @@ export const DishPreview = (props: {
                 props.isMinimal ? " minimal" : ""
               }`}
             >
-              {props.item.resName}
+              {props.data.resName}
             </h1>
-            {!props.isMinimal && <h2>{props.item.chef}</h2>}
+            {!props.isMinimal && <h2>{props.data.chef}</h2>}
           </div>
         )}
       </div>

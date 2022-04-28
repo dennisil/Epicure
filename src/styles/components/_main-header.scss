@@ -6,14 +6,25 @@ header {
         max-width: 35px;
         max-height: 35px;
       }
-      gap: 15px;
     }
   }
   .links {
     margin-inline-start: 10px;
-    gap: 15px;
+    gap: 1em;
+    display: flex;
+    align-items: baseline;
+    padding: 4px 0;
+    a {
+      font-size: 1.2rem;
+    }
+    .home-link {
+      font-size: 1.8rem;
+    }
   }
   .search-container {
     gap: 20px;
+  }
+  .active {
+    border-bottom: 1px solid orange;
   }
 }

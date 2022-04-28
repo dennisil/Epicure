@@ -1,7 +1,7 @@
-import React from "react";
 import userIcon from "../assets/img/user-icon.svg";
 import bagIcon from "../assets/img/bag-icon.svg";
 import { Input } from "./Input";
+import { NavLink } from "react-router-dom";
 
 export const MainHeader = () => {
   return (
@@ -13,14 +13,22 @@ export const MainHeader = () => {
             src={require("../assets/img/logo.jpg")}
             alt=""
           />
-          <h1>Epicure</h1>
           <ul className="links flex ">
-            <li>Restaurants</li>
-            <li>Chefs</li>
+            <li>
+              <NavLink to={"/"} className="home-link">
+                Epicure
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/restaurants"}>Restaurants</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/chefs"}>Chefs</NavLink>
+            </li>
           </ul>
         </div>
         <div className="search-container flex">
-        <Input propClassName={"header-search"}/>
+          <Input propClassName={"header-search"} />
           <img src={userIcon} alt="" />
           <img src={bagIcon} alt="" />
         </div>

@@ -33,6 +33,9 @@
   &.end {
     justify-content: end;
   }
+  &.wrap {
+    flex-wrap: wrap;
+  }
 }
 
 .pointer {

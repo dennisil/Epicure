@@ -1,6 +1,20 @@
 .card-container {
   text-align: center;
   width: 360px;
+
+  .price-line-container {
+    .line-1 {
+      width: 112px;
+      height: 1px;
+      border: solid 0.5px gray;
+    }
+    .line-2 {
+      width: 112px;
+      height: 1px;
+      border: solid 0.5px gray;
+    }
+    gap: 10px;
+  }
   h1 {
     font-size: 2.8rem;
     letter-spacing: 2.5px;
@@ -54,7 +68,7 @@
     }
 
     p {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
     h2 {
       padding-bottom: 20px;
@@ -72,6 +86,6 @@
     }
   }
 }
-.min-container{
+.min-container {
   width: 200px;
 }

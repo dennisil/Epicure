@@ -10,10 +10,11 @@ export const DishList = (props: {
   isMinimal?: boolean;
   align?: string;
   disableSwipe?: boolean;
+  wrap?: boolean;
 }) => {
   return (
     <section
-      className="dish-list flex justify-center align-center"
+      className={`dish-list flex justify-center align-center ${props.wrap ? "wrap" : ""}`}
       style={{ justifyContent: props?.align }}
     >
       {!props.disableSwipe ? (
@@ -25,13 +26,13 @@ export const DishList = (props: {
         >
           {props.items.map((item: Restaurant | Dish) => (
             <SwiperSlide>
-              <DishPreview item={item} isMinimal={props.isMinimal} />
+              <DishPreview data={item} isMinimal={props.isMinimal} />
             </SwiperSlide>
           ))}
         </Swiper>
       ) : (
         props.items.map((item: Restaurant | Dish) => (
-          <DishPreview item={item} isMinimal={props.isMinimal} />
+          <DishPreview data={item} isMinimal={props.isMinimal} />
         ))
       )}
     </section>

@@ -1,0 +1,11 @@
+.res-page {
+  .filter-links {
+    gap: 2.2em;
+    a {
+      font-size: 1.2rem;
+      &:focus {
+        color: red;
+      }
+    }
+  }
+}
