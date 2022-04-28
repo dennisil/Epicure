@@ -8,7 +8,7 @@ export const Input = (props: { propClassName: string }) => {
   };
   return (
     <div
-      style={{ border: "1px solid black" }}
+      style={{ border: "1px solid black",borderRadius: "6px"}}
       className={`flex space-between ${props.propClassName}`}
     >
       <img src={SearchIcon} alt="" />
