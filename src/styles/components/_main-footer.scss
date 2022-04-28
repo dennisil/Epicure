@@ -1,0 +1,45 @@
+footer {
+  background-color: #fafafa;
+
+  .footer-content {
+    // max-width: 990px;
+    p {
+      font-size: 1.4rem;
+      max-width: 550px;
+      margin-block-end: 10px;
+    }
+    .logo {
+      width: 180px;
+      height: 170px;
+      background-blend-mode: multiply;
+    }
+    .downloads-container {
+      justify-content: start;
+      gap: 20px;
+      .download-container {
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 8px;
+        text-align: center;
+
+        .download-text {
+          margin-inline-start: 20px;
+          p {
+            margin: 0;
+            font-size: 1.2rem;
+          }
+          span {
+            font-size: 1.4rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .contact-container {
+    padding-top: 40px;
+    background-color: white;
+    gap: 45px;
+  }
+}

@@ -1,0 +1,19 @@
+header {
+  padding: 20px;
+  nav {
+    .logo-container {
+      .logo {
+        max-width: 35px;
+        max-height: 35px;
+      }
+      gap: 15px;
+    }
+  }
+  .links {
+    margin-inline-start: 10px;
+    gap: 15px;
+  }
+  .search-container {
+    gap: 20px;
+  }
+}

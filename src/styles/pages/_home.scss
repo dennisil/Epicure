@@ -1,0 +1,33 @@
+.home {
+  max-width: 1440px;
+  .hero {
+    max-width: 1440px;
+    height: 700px;
+    background-image: url("../../../public/imgs/hero-picture.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-block-start: 140px; //Temporary?
+    margin-block-end: 40px; //Temporary?
+  }
+
+  .home-res-link {
+    text-align: end;
+    margin-block-start: 30px;
+    font-weight: bold;
+  }
+
+  .res-link-container {
+    margin-top: 30px;
+    max-width: 1250px;
+  }
+}

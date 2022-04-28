@@ -1,11 +1,26 @@
 // Setup
-@import './setup/functions';
-@import './setup/mixins';
-@import './setup/typography';
-@import './setup/variables';
+@import "./setup/functions";
+@import "./setup/mixins";
+@import "./setup/typography";
+@import "./setup/variables";
 
-// Basics 
-@import './basics/base';
-@import './basics/helpers';
-@import './basics/layout';
-@import './basics/layouthome;
+// Basics
+@import "./basics/base";
+@import "./basics/helpers";
+@import "./basics/layout";
+
+// Components
+@import "./components/main-header";
+@import "./components//main-footer";
+@import "./components/filter";
+@import "./components/dish-list";
+@import "./components/dish-preview";
+@import "./components/icon-banner";
+@import "./components/chef-of-the-week";
+
+// Pages
+@import "./pages/home";
+
+.max-container {
+  max-width: 1440px;
+}

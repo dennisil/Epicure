@@ -1,0 +1,25 @@
+.icon-banner {
+  background-color: #fafafa;
+  margin-top: 90px;
+  
+  .banner-container {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 265px;
+
+    .icon-container {
+      max-width: 1440px;
+      img {
+        max-width: 80px;
+        max-height: 60px;
+      }
+      gap: 110px;
+      div {
+        gap: 30px;
+      }
+    }
+  }
+}

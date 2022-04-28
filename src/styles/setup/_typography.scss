@@ -1,34 +1,10 @@
-
 @font-face {
-    font-family:airbnb; // all text besides headers and titles 
-    src: url(~@/assets/fonts/airbnb/AirbnbCereal-Light.ttf);
-}
-
-@font-face { //titles (inspiration for your next trip....)
-    font-family:airbnb-bold;
-    src: url(~@/assets/fonts/airbnb/AirbnbCereal-Bold.ttf);
-
+  font-family: HelveticaNeue; // all text besides headers and titles
+  src: url(../../assets/fonts/Pragmatica-ExtraLight.ttf);
 }
 
 @font-face {
-    font-family:airbnb-medium; //small titles- for search
-    src: url(~@/assets/fonts/airbnb/AirbnbCereal-Medium.ttf);
-}
-
-@font-face {
-    font-family:airbnb-book;
-    src: url(~@/assets/fonts/airbnb/AirbnbCereal-Book.ttf);
-
-}
-
-@font-face {
-    font-family:airbnb-extra-bold;
-    src: url(~@/assets/fonts/airbnb/AirbnbCereal-ExtraBold.ttf);
-
-}
-
-@font-face {
-    font-family:airbnb-black;
-    src: url(~@/assets/fonts/airbnb/AirbnbCereal-Black.ttf);
-
+  //titles (inspiration for your next trip....)
+  font-family: HelveticaNeue-Thin;
+  src: url(../../assets/fonts/HelveticaNeueUltraLight.ttf);
 }
