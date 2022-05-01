@@ -1,5 +1,5 @@
 footer {
-  background-color: #fafafa;
+  background-color: $light-grey;
   max-width: 1440px;
   max-width: 100%;
 
@@ -7,6 +7,23 @@ footer {
     max-width: 1000px;
     width: 100%;
     gap: 180px;
+    @include for-mobile-layout {
+      // display: flex;
+      // flex-direction: column;
+      gap: 30px;
+      .footer-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        p {
+          max-width: 300px;
+        }
+      }
+      .downloads-container {
+        justify-content: center !important;
+      }
+    }
 
     .footer-about-us {
       font-size: 1.8rem;
@@ -22,6 +39,7 @@ footer {
       width: 180px;
       height: 170px;
       background-blend-mode: multiply;
+      margin-bottom: 40px;
     }
     .downloads-container {
       justify-content: start;
@@ -31,8 +49,8 @@ footer {
       .download-container {
         width: 200px;
         border: 1px solid black;
-        border-radius: 15px;
-        padding: 0 8px;
+        border-radius: 12px;
+        padding: 3px;
         text-align: center;
 
         .download-text {

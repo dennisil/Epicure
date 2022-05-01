@@ -1,14 +1,13 @@
-import React from "react";
 import { DishList } from "./DishList";
 
 export const ChefOfTheWeek = (props: { items: Restaurant[] | Dish[] }) => {
   return (
     <article className="chef-container flex column align-center ">
       <h1 className="title">CHEF OF THE WEEK :</h1>
-      <div className="chef-info flex space-around">
+      <div className="chef-info flex">
         <img
           src={require("../assets/img/chef/yossi.jpg")}
-          alt="Yossi shitrit"
+          alt="Chef"
         />
         <p className="chef-description">
           Chef Yossi Shitrit has been living and breathing his culinary dreams
@@ -18,7 +17,9 @@ export const ChefOfTheWeek = (props: { items: Restaurant[] | Dish[] }) => {
           expressed in the every detail of each and every dish.
         </p>
       </div>
-      <section className="chef-res-container flex start column" style={{width : "1040px"}}>
+      <section
+        className="chef-res-container flex start column"
+      >
         <h1 className="chef-res-title">Yossi's restaurants :</h1>
         <DishList
           items={props.items}

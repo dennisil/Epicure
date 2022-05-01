@@ -17,22 +17,34 @@ export const Restaurants = (props: { restaurants: Restaurant[] }) => {
         <nav className="flex justify-center">
           <ul className="filter-links flex">
             <li>
-              <a href="#" onClick={() => handleOnFilterClick("")}>
+              <a
+                className={!filterWord ? "active" : ""}
+                onClick={() => handleOnFilterClick("")}
+              >
                 All
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => handleOnFilterClick("new")}>
+              <a
+                className={filterWord === "new" ? "active" : ""}
+                onClick={() => handleOnFilterClick("new")}
+              >
                 New
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => handleOnFilterClick("popular")}>
+              <a
+                className={filterWord === "popular" ? "active" : ""}
+                onClick={() => handleOnFilterClick("popular")}
+              >
                 Most Popular
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => handleOnFilterClick("open")}>
+              <a
+                className={filterWord === "open" ? "active" : ""}
+                onClick={() => handleOnFilterClick("open")}
+              >
                 Open Now
               </a>
             </li>

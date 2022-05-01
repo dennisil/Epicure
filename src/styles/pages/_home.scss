@@ -1,5 +1,6 @@
 .home {
   max-width: 1440px;
+  width: 100%;
   .hero {
     max-width: 1440px;
     height: 700px;
@@ -8,8 +9,6 @@
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: contain;
     background-position: center;
   }
 
@@ -26,11 +25,10 @@
     font-weight: bold;
   }
 
-  .res-link-container {
-    margin-top: 30px;
-    max-width: 1250px;
-  }
   .all-res-link {
+    margin-top: 30px;
+    max-width: 1100px;
+    width: 100%;
     font-size: 2rem;
     font-family: HelveticaNeue;
   }

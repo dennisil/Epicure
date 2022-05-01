@@ -48,9 +48,9 @@ export const DishPreview = (props: {
                   : ""}
               </div>
               <div className="price-line-container flex align-center">
-                <div className="line-1"></div>
+                <div className="card-line"></div>
                 <span className="card-price">₪{props.data.price}</span>
-                <div className="line-2"></div>
+                <div className="card-line"></div>
               </div>
             </div>
           </div>

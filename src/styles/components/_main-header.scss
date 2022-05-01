@@ -1,5 +1,16 @@
 header {
-  padding: 20px;
+  padding: 15px;
+  // border-bottom: 0.2px solid gray;
+  // opacity: 0.8;
+  max-width: 1250px;
+  width: 100%;
+
+  .hamburger-container {
+    display: none;
+    @include for-mobile-layout {
+      display: block;
+    }
+  }
   nav {
     .logo-container {
       .logo {
@@ -9,22 +20,28 @@ header {
     }
   }
   .links {
+    @include for-mobile-layout {
+      display: none;
+    }
     margin-inline-start: 10px;
-    gap: 1em;
+    gap: 30px;
     display: flex;
     align-items: baseline;
     padding: 4px 0;
     a {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
     .home-link {
       font-size: 1.8rem;
     }
   }
+  // Input in header
   .search-container {
     gap: 20px;
+    max-width: 415px;
+    width: 100%;
   }
   .active {
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid $pumpkin;
   }
 }

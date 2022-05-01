@@ -22,7 +22,7 @@ export const DishList = (props: {
           modules={[Pagination]}
           spaceBetween={10}
           slidesPerView={3}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
         >
           {props.items.map((item: Restaurant | Dish) => (
             <SwiperSlide>

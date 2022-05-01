@@ -18,11 +18,9 @@
 @import "./components/icon-banner";
 @import "./components/chef-of-the-week";
 @import "./components/small-footer";
+@import "./components/input";
 
 // Pages
 @import "./pages/home";
 @import "./pages/restaurants";
 
-.max-container {
-  max-width: 1440px;
-}

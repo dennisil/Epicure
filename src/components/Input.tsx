@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import { useState } from "react";
 import SearchIcon from "../assets/img/search-icon.svg";
 
 export const Input = (props: { propClassName: string }) => {
@@ -8,8 +8,7 @@ export const Input = (props: { propClassName: string }) => {
   };
   return (
     <div
-      style={{ border: "1px solid black",borderRadius: "6px"}}
-      className={`flex space-between ${props.propClassName}`}
+      className={`input-container flex space-between align-center ${props.propClassName}`}
     >
       <img src={SearchIcon} alt="" />
       <input

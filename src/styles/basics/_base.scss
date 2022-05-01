@@ -35,53 +35,14 @@ p {
 a {
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
 }
 
-.input {
-  // width: 100%;
-  padding: 10px;
-  outline: none;
-  font-size: 1.3rem;
-  background: transparent;
-  border: none;
-  width: 100%;
-}
-.autocomplete-container {
-  background-color: $white;
-  opacity: 0.8;
-  z-index: 10;
-  margin-top: 50px;
-  position: absolute;
-  height: 400px;
-}
-.header-search {
-  flex-direction: row-reverse;
-  width: 415px;
-  .autocomplete-container {
-    width: 415px;
-  }
-  img {
-    padding-right: 5px;
-    width: 30px;
-    height: 42px;
-  }
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-search {
-  width: 510px;
-  .autocomplete-container {
-    width: 510px;
-  }
-  img {
-    padding-left: 5px;
-  }
-  input {
-    background: transparent;
-    border: none;
-    width: 100%;
-  }
-}
 
-// .full {
-//   width: 1440px;
-// }

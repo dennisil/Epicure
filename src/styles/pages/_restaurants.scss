@@ -2,11 +2,12 @@
   .filter-links {
     gap: 2.2em;
     margin-bottom: 35px;
+    margin-top: 45px;
     a {
       font-size: 1.4rem;
-      &:focus {
-        color: orange;
-      }
     }
+  }
+  .active {
+    font-family: HelveticaNeue;
   }
 }

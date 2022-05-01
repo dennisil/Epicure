@@ -4,6 +4,9 @@
 
 .gird {
   display: grid;
+  &.place-center {
+    place-items: center;
+  }
 }
 // flex helpers
 .flex {
@@ -32,6 +35,9 @@
   }
   &.end {
     justify-content: end;
+  }
+  &.align-end {
+    align-items: end;
   }
   &.wrap {
     flex-wrap: wrap;
@@ -62,4 +68,8 @@ ul {
 
 .block {
   display: block;
+}
+
+.max-container {
+  max-width: 1440px;
 }

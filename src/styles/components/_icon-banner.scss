@@ -1,8 +1,11 @@
 .icon-banner {
-  background-color: #fafafa;
+  background-color: $light-grey;
   margin-top: 90px;
+  max-width: 1440px;
+  width: 100%;
   
   .banner-container {
+    max-width: 920px;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -12,6 +15,7 @@
 
     .icon-container {
       max-width: 1440px;
+      width: 100%;
       img {
         max-width: 80px;
         max-height: 60px;
