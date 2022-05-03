@@ -14,11 +14,18 @@
       }
     }
     img {
+      @include for-mobile-layout {
+        max-width: 335px;
+        max-height: 240px;
+      }
       max-width: 430px;
       max-height: 340px;
     }
   }
   p {
+    @include for-mobile-layout {
+      font-size: 1.1rem;
+    }
     text-align: left;
     font-size: 1.8rem;
     max-width: 540px;
@@ -28,6 +35,10 @@
     width: 100%;
     margin-top: 60px;
     .chef-res-title {
+      @include for-mobile-layout {
+        text-align: left;
+        font-size: 1.2rem;
+      }
       text-align: left;
       font-size: 2.4rem;
     }

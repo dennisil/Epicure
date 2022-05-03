@@ -113,7 +113,6 @@ const dishes: Dish[] = [
     special: ["spicy", "vegan"],
   },
 ];
-
 const chefRes: Restaurant[] = [
   {
     resName: "Onza",

@@ -10,7 +10,7 @@ export const Input = (props: { propClassName: string }) => {
     <div
       className={`input-container flex space-between align-center ${props.propClassName}`}
     >
-      <img src={SearchIcon} alt="" />
+      <img src={SearchIcon} alt="Search" title="Search" className="pointer" />
       <input
         onChange={handleOnChange}
         className="input"

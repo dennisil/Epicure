@@ -8,8 +8,6 @@ footer {
     width: 100%;
     gap: 180px;
     @include for-mobile-layout {
-      // display: flex;
-      // flex-direction: column;
       gap: 30px;
       .footer-info-container {
         display: flex;
@@ -31,11 +29,19 @@ footer {
       padding-bottom: 20px;
     }
     p {
+      @include for-mobile-layout {
+        font-size: 1.2rem;
+        margin-block-end: 30px;
+      }
       font-size: 1.4rem;
       max-width: 550px;
       margin-block-end: 10px;
     }
     .logo {
+      @include for-mobile-layout {
+        max-width: 140px;
+        max-height: 130px;
+      }
       width: 180px;
       height: 170px;
       background-blend-mode: multiply;
@@ -47,6 +53,9 @@ footer {
       margin-top: 1em;
       margin-bottom: 3em;
       .download-container {
+        @include for-mobile-layout {
+          width: 140px;
+        }
         width: 200px;
         border: 1px solid black;
         border-radius: 12px;
@@ -54,12 +63,23 @@ footer {
         text-align: center;
 
         .download-text {
+          @include for-mobile-layout {
+            margin-inline-start: 10px;
+          }
           margin-inline-start: 20px;
+         
           p {
+            @include for-mobile-layout {
+              font-size: 0.8rem;
+            }
             margin: 0;
             font-size: 1.1rem;
           }
           span {
+            @include for-mobile-layout {
+              font-size: 1rem;
+              
+            }
             font-size: 1.3rem;
             font-weight: bold;
           }

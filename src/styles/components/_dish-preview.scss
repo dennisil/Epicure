@@ -1,9 +1,24 @@
-.card-container {
+.card-container.size-dish {
   text-align: center;
   width: 360px;
+  @include for-mobile-layout {
+   height: 550px;
+   width: 260px;
+  }
+}
 
+.card-container {
+  @include for-mobile-layout {
+    width: 205px;
+    height: 340px;
+  }
+  text-align: center;
+  width: 360px;
   .price-line-container {
     .card-line {
+      @include for-mobile-layout {
+        width: 75px;
+      }
       width: 112px;
       height: 1px;
       border: solid 0.5px gray;
@@ -12,6 +27,9 @@
     gap: 10px;
   }
   h1 {
+    @include for-mobile-layout {
+      font-size: 1.8rem;
+  }
     font-size: 2.8rem;
     letter-spacing: 2.5px;
     font-family: HelveticaNeue;
@@ -22,6 +40,9 @@
     margin-block-start: 15px;
 
     .dish {
+      @include for-mobile-layout {
+        height: 270px;
+      }
       height: 360px;
     }
     .card-info {
@@ -50,20 +71,35 @@
       margin-block-start: 10px;
     }
     .res-img {
+      @include for-mobile-layout {
+        width: 205px;
+        height: 225px;
+      }
       max-width: 360px;
       max-height: 225px;
     }
     .dish-img {
+      @include for-mobile-layout {
+        max-width: 260px;
+        max-height: 210px;
+      }
       max-width: 360px;
       max-height: 290px;
     }
 
     .min-img {
+      @include for-mobile-layout {
+        width: 155px;
+        height: 150px;
+      }
       max-width: 230px;
       height: 225px;
     }
 
     p {
+      @include for-mobile-layout {
+        font-size: 1.1rem;
+      }
       font-size: 1.8rem;
       max-width: 290px;
     }
@@ -72,16 +108,28 @@
     }
   }
   .min-item-card {
+    @include for-mobile-layout {
+      width: 155px;
+      height: 240px;
+    }
     display: flex;
     flex-direction: column;
     max-width: 220px;
     width: 100%;
     height: 360px;
     .minimal {
+      @include for-mobile-layout {
+        font-size: 1rem;
+      }
       font-size: 2rem;
     }
   }
 }
 .min-container {
   width: 200px;
+  
 }
+// .card-container.dish {
+//   width: 260px;
+//   height: 210px;
+// }

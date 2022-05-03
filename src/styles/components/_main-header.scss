@@ -4,7 +4,38 @@ header {
   // opacity: 0.8;
   max-width: 1250px;
   width: 100%;
-
+  .mobile-menu {
+    height: 100%;
+    width: 0;
+    // width: 100%;
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255);
+    overflow-x: hidden; 
+    transition: 0.5s;
+    .btn-container {
+      width: 100%;
+      border-bottom: 0.5px solid gray;
+      padding: 6px;
+      margin-bottom: 60px;
+    }
+    .mobile-menu-content {
+      gap: 50px;
+      a {
+        font-size: 1.2rem;
+      }
+      .menu-line {
+        width: 196px;
+        height: 2px;
+        border-bottom: solid 0.2px black;
+      }
+    }
+  }
+  .open-menu {
+    width: 100%;
+  }
   .hamburger-container {
     display: none;
     @include for-mobile-layout {

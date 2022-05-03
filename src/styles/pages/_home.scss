@@ -3,6 +3,9 @@
   width: 100%;
   .hero {
     max-width: 1440px;
+    @include for-mobile-layout {
+      height: 270px;
+    }
     height: 700px;
     background-image: url("../../../public/imgs/hero-picture.jpg");
     display: flex;
@@ -13,8 +16,14 @@
   }
 
   .title {
+    @include for-mobile-layout {
+      font-size: 1em;
+      margin-block-start: 90px;
+      margin-block-end: 15px;
+    }
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    letter-spacing: 1.2px;
     margin-block-start: 140px; //Temporary?
     margin-block-end: 40px; //Temporary?
   }
@@ -26,6 +35,9 @@
   }
 
   .all-res-link {
+    @include for-mobile-layout {
+      display: none;
+    }
     margin-top: 30px;
     max-width: 1100px;
     width: 100%;

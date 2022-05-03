@@ -4,32 +4,47 @@ import Logo from "../assets/img/logo.jpg";
 import Hamburger from "../assets/img/hamburger.svg";
 import { Input } from "./Input";
 import { NavLink, Link } from "react-router-dom";
+import { useState } from "react";
 
 export const MainHeader = () => {
+  const [isSmallNavOpen, setIsSmallNavOpen] = useState(false);
+
+  const handleSmallNavbarClick = () => {
+    setIsSmallNavOpen((state) => !state);
+  };
+
   return (
     <header className="home-layout">
-      <nav className="flex align-center justify-content space-between" >
-        <div style={{width: "100%"}} className="flex align-center space-between">
-
-        <div className="hamburger-container">
-          <img src={Hamburger} alt="" />
-        </div>
-        <div className="logo-container flex align-center justify-content">
-          <img className="logo" src={Logo} alt="Logo" />
-          <ul className="links flex ">
-            <li>
-              <Link to={"/"} className="home-link">
-                Epicure
-              </Link>
-            </li>
-            <li>
-              <NavLink to={"/restaurants"}>Restaurants</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/chefs"}>Chefs</NavLink>
-            </li>
-          </ul>
-        </div>
+      <nav className="flex align-center justify-content space-between">
+        <div
+          style={{ width: "100%" }}
+          className="flex align-center space-between"
+        >
+          <div className="hamburger-container pointer">
+            <img
+              onClick={handleSmallNavbarClick}
+              src={Hamburger}
+              alt="Hamburger-navbar"
+            />
+          </div>
+          <div className="logo-container flex align-center justify-content">
+            <Link to={"/"} className="home-link">
+              <img className="logo" src={Logo} alt="Logo" />
+            </Link>
+            <ul className="links flex ">
+              <li>
+                <Link to={"/"} className="home-link">
+                  Epicure
+                </Link>
+              </li>
+              <li>
+                <NavLink to={"/restaurants"}>Restaurants</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/chefs"}>Chefs</NavLink>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="search-container flex">
           <Input propClassName={"header-search"} />
@@ -37,6 +52,27 @@ export const MainHeader = () => {
           <img src={bagIcon} alt="" />
         </div>
       </nav>
+      {/* Mobile navbar */}
+      <div
+        onClick={handleSmallNavbarClick}
+        className={`mobile-menu ${isSmallNavOpen ? "open-menu" : ""}`}
+      >
+        <div className="btn-container">
+          <button>X</button>
+        </div>
+        <section className="mobile-menu-content flex justify-center column align-center">
+          <Link to={"/chefs"} className="home-link bold">
+            Chefs
+          </Link>
+          <Link to={"/restaurants"} className="home-link bold">
+            All Restaurants
+          </Link>
+          <div className="menu-line"></div>
+          <a>Sign In</a>
+          <a>Contact Us</a>
+          <a>Terms of Use</a>
+        </section>
+      </div>
     </header>
   );
 };

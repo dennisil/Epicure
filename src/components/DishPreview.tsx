@@ -10,7 +10,11 @@ export const DishPreview = (props: {
   return (
     <article
       className={
-        props.isMinimal ? "card-container min-container" : "card-container"
+        props.isMinimal
+          ? "card-container min-container"
+          : isDish(props.data)
+          ? "card-container size-dish"
+          : "card-container"
       }
     >
       {isDish(props.data) && (

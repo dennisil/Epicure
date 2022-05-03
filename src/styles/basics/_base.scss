@@ -37,6 +37,16 @@ a {
   color: #000000;
   cursor: pointer;
 }
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.bold {
+  font-family: HelveticaNeue;
+}
 
 .App {
   display: flex;
@@ -44,5 +54,3 @@ a {
   align-items: center;
   justify-content: center;
 }
-
-
