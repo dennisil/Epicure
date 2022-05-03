@@ -1,10 +1,6 @@
 import { DishPreview } from "./DishPreview";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
 import { useMediaQuery } from "react-responsive";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 export const DishList = (props: {
   items: Restaurant[] | Dish[];
   isMinimal?: boolean;
@@ -23,10 +19,16 @@ export const DishList = (props: {
     >
       {!props.disableSwipe ? (
         <Swiper
-          modules={[Pagination]}
-          spaceBetween={isMobile ? ("price" in props.items[0] ? 60 : -20) : 10}
+          spaceBetween={
+            isMobile
+              ? "price" in props.items[0]
+                ? 10
+                : props.isMinimal
+                ? -100
+                : -65
+              : 10
+          }
           slidesPerView={isMobile ? 1.7 : 3}
-          // pagination={{ clickable: true }}
         >
           {props.items.map((item: Restaurant | Dish) => (
             <SwiperSlide>

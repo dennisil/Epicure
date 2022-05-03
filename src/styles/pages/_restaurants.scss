@@ -1,13 +1,29 @@
 .res-page {
   .filter-links {
+    @include for-mobile-layout {
+      gap: 1.2em;
+    }
     gap: 2.2em;
     margin-bottom: 35px;
     margin-top: 45px;
     a {
+      @include for-mobile-layout {
+        font-size: 1rem;
+      }
       font-size: 1.4rem;
     }
   }
   .active {
     font-family: HelveticaNeue;
+  }
+  .res-page-title {
+    @include for-mobile-layout {
+      display: block;
+    }
+    text-align: center;
+    display: none;
+    h1 {
+      font-size: 1.4rem;
+    }
   }
 }

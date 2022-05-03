@@ -2,10 +2,12 @@
   text-align: center;
   width: 360px;
   @include for-mobile-layout {
-   height: 550px;
-   width: 260px;
+    height: 550px;
+    width: 260px;
   }
 }
+
+
 
 .card-container {
   @include for-mobile-layout {
@@ -29,7 +31,7 @@
   h1 {
     @include for-mobile-layout {
       font-size: 1.8rem;
-  }
+    }
     font-size: 2.8rem;
     letter-spacing: 2.5px;
     font-family: HelveticaNeue;
@@ -99,6 +101,7 @@
     p {
       @include for-mobile-layout {
         font-size: 1.1rem;
+        max-width: 215px;
       }
       font-size: 1.8rem;
       max-width: 290px;
@@ -127,9 +130,9 @@
 }
 .min-container {
   width: 200px;
-  
 }
-// .card-container.dish {
-//   width: 260px;
-//   height: 210px;
-// }
+.item-card:not(.min-item-card) {
+  @include for-mobile-layout {
+    background-color: $light-tan;
+  }
+}

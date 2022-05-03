@@ -14,6 +14,9 @@ export const Restaurants = (props: { restaurants: Restaurant[] }) => {
   if (props.restaurants) {
     return (
       <main className="res-page">
+        <div className="res-page-title">
+          <h1 className="bold">Restaurants</h1>
+        </div>
         <nav className="flex justify-center">
           <ul className="filter-links flex">
             <li>
