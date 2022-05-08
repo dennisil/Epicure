@@ -10,6 +10,15 @@ export const DishList = (props: {
 }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
 
+  const setSpaceBetween = (): number => {
+    if (isMobile) {
+      if ("price" in props.items[0]) return 70;
+      else if (props.isMinimal) return -200;
+      else return -20;
+    }
+    return 10;
+  };
+
   return (
     <section
       className={`dish-list flex  ${props.wrap ? "wrap" : ""} ${
@@ -19,15 +28,7 @@ export const DishList = (props: {
     >
       {!props.disableSwipe ? (
         <Swiper
-          spaceBetween={
-            isMobile
-              ? "price" in props.items[0]
-                ? 10
-                : props.isMinimal
-                ? -100
-                : -65
-              : 10
-          }
+          spaceBetween={setSpaceBetween()}
           slidesPerView={isMobile ? 1.7 : 3}
         >
           {props.items.map((item: Restaurant | Dish) => (

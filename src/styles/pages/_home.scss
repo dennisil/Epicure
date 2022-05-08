@@ -1,6 +1,7 @@
 .home {
   max-width: 1440px;
   width: 100%;
+  
   .hero {
     max-width: 1440px;
     @include for-mobile-layout {
