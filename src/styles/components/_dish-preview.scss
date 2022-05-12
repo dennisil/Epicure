@@ -7,9 +7,12 @@
   }
 }
 
-
-
 .card-container {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    animation: heartbeat 1s ease-in-out 0.3s both;
+  }
   @include for-mobile-layout {
     width: 205px;
     height: 340px;

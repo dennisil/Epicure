@@ -1,14 +1,28 @@
+import { useNavigate } from "react-router-dom";
+
 export const DishPreview = (props: {
   data: Restaurant | Dish;
   isMinimal?: boolean;
+  setCurrDish: (dish: Dish) => void;
 }) => {
+  const navigate = useNavigate();
   // Checks if prop is a dish
   const isDish = (object: any): object is Dish => {
     return "price" in object;
   };
 
+  // onclick : if item is dish open modal, else go to res details page
+  const handleOnResClick = () => {
+    if (isDish(props.data)) {
+      props.setCurrDish(props.data);
+      return;
+    }
+    navigate(`/restaurant/${props.data._id}`);
+  };
+
   return (
     <article
+      onClick={handleOnResClick}
       className={
         props.isMinimal
           ? "card-container min-container"
@@ -44,9 +58,10 @@ export const DishPreview = (props: {
                 {props.data.special
                   ? props.data.special.map((special) => (
                       <img
+                        key={special}
                         className="special-icon"
                         src={`/imgs/special-icon/${special}-icon.svg`}
-                        alt=""
+                        alt="special"
                       />
                     ))
                   : ""}
@@ -74,5 +89,4 @@ export const DishPreview = (props: {
       </div>
     </article>
   );
-
 };

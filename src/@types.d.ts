@@ -1,10 +1,16 @@
 interface Restaurant {
+  _id?: string;
   resName: string;
   chef: string;
   imgUrl: string;
   tags?: string[];
+  dishes?: Dish[];
 }
-interface Dish extends Restaurant {
+interface Dish {
+  _id: string;
+  resName: string;
+  chef: string;
+  imgUrl: string;
   dishName: string;
   price: number;
   ingredients: string;

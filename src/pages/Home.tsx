@@ -4,7 +4,6 @@ import { ChefOfTheWeek } from "../components/ChefOfTheWeek";
 import { MainFooter } from "../components/MainFooter";
 import { Link } from "react-router-dom";
 import { Hero } from "../components/Hero";
-import { useEffect } from "react";
 
 export const Home = (props: {
   restaurants: Restaurant[];

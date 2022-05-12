@@ -1,6 +1,3 @@
-// import VeganIcon from "/imgs/special-icon/vegan-icon.svg";
-// import SpicyIcon from "/imgs/special-icon/spicy-icon.svg";
-// import VegetarianIcon from "/imgs/special-icon/vegetarian.svg";
 
 export const IconBanner = () => {
   return (

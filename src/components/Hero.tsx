@@ -7,6 +7,7 @@ export const Hero = () => {
       <div className="hero full">
         <Filter />
       </div>
+      {/* HeroButtons only in mobile  */}
       <HeroButtons />
     </>
   );

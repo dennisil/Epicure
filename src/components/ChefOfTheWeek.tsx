@@ -25,7 +25,6 @@ export const ChefOfTheWeek = (props: { items: Restaurant[] | Dish[] }) => {
           items={props.items}
           isMinimal={true}
           align={"start"}
-          // disableSwipe={true}
         />
       </section>
     </article>
