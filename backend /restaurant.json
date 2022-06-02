@@ -1,0 +1,99 @@
+[
+  {
+    "_id": "62834df87e29e8169eabb30e",
+    "resName": "Tiger Lily",
+    "chef": "Yanir Green",
+    "imgUrl": "/imgs/dishes/tiger-lily.jpg"
+  },
+  {
+    "_id": "62834df87e29e8169eabb30f",
+    "resName": "Claro",
+    "chef": "Ran Shmueli",
+    "imgUrl": "/imgs/dishes/claro.jpg",
+    "tags": ["open", "popular"]
+  },
+  {
+    "_id": "62834df87e29e8169eabb314",
+    "resName": "Tiger Lily",
+    "chef": "Yanir Green",
+    "imgUrl": "/imgs/dishes/tiger-lily.jpg",
+    "tags": ["new"]
+  },
+  {
+    "_id": "62834df87e29e8169eabb312",
+    "resName": "Claro",
+    "chef": "Ran Shmueli",
+    "imgUrl": "/imgs/dishes/claro.jpg"
+  },
+  {
+    "_id": "62834df87e29e8169eabb310",
+    "resName": "Lumina",
+    "chef": "Meir Adoni",
+    "imgUrl": "/imgs/dishes/lumina.jpg",
+    "tags": ["new", "popular"]
+  },
+  {
+    "_id": "62834df87e29e8169eabb30d",
+    "resName": "Lumina",
+    "chef": "Meir Adoni",
+    "imgUrl": "/imgs/dishes/lumina.jpg",
+    "dishes": [
+      "62834d9e7e29e8169eabb304",
+      "62834d9e7e29e8169eabb305",
+      "62834d9e7e29e8169eabb306",
+      "62834d9e7e29e8169eabb307"
+    ]
+  },
+  {
+    "_id": "62834df87e29e8169eabb30c",
+    "resName": "Claro",
+    "chef": "Ran Shmueli",
+    "imgUrl": "/imgs/dishes/claro.jpg",
+    "tags": ["popular"],
+    "dishes": [
+      "628a2a36245ec504d8022bac",
+      "628a29d2245ec504d8022baa",
+      "62834d9e7e29e8169eabb309",
+      "62834d9e7e29e8169eabb308"
+    ]
+  },
+  {
+    "_id": "62834df87e29e8169eabb311",
+    "resName": "Tiger Lily",
+    "chef": "Yanir Green",
+    "imgUrl": "/imgs/dishes/tiger-lily.jpg"
+  },
+  {
+    "_id": "62834df87e29e8169eabb313",
+    "resName": "Lumina",
+    "chef": "Meir Adoni",
+    "imgUrl": "/imgs/dishes/lumina.jpg"
+  },
+  {
+    "_id": "628ca38e9730c6bdfdc9e578",
+    "resName": "Onza",
+    "chef": "Yossi Shitrit",
+    "imgUrl": "/imgs/dishes/onza.jpg",
+    "tags": [],
+    "dishes": [],
+    "__v": 0
+  },
+  {
+    "_id": "628ca3bb9730c6bdfdc9e57a",
+    "resName": "Kitchen Market",
+    "chef": "Yossi Shitrit",
+    "imgUrl": "/imgs/dishes/pizza.jpg",
+    "tags": [],
+    "dishes": [],
+    "__v": 0
+  },
+  {
+    "_id": "628ca3d79730c6bdfdc9e57c",
+    "resName": "Mashya",
+    "chef": "Yossi Shitrit",
+    "imgUrl": "/imgs/dishes/mashya.jpg",
+    "tags": [],
+    "dishes": [],
+    "__v": 0
+  }
+]
